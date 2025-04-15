@@ -8,9 +8,37 @@
 <body>
 <main>
     <h1>Найди себе друга!</h1>
+    <form action="/pets/orders" method="POST">
+        <label for="name">Имя питомца:</label>
+        <input type="text" id="name" name="name" placeholder="Primal Beast" value="Primal Beast">
+        <br><br>
 
-    <!--Форму размещай тут-->
+        <label for="petType">Тип питомца:</label>
+        <select name="petType" id="petType">
+            <option value="cat" selected>Кот</option>
+            <option value="dog">Собака</option>
+            <option value="parrot">Попугай</option>
+        </select>
+        <br><br>
 
+        <fieldset>
+            <legend>Пол питомца:</legend>
+            <label><input type="radio" name="gender" value="boy" checked> Мальчик</label>
+            <label><input type="radio" name="gender" value="girl"> Девочка</label>
+            <label><input type="radio" name="gender" value="none"> Неизвестно</label>
+        </fieldset>
+        <br>
+
+        <label for="eyeColor">Цвет глаз:</label>
+        <input type="color" id="eyeColor" name="eyeColor" value="#0000ff">
+        <br><br>
+
+        <label for="tailLength">Длина хвоста (см):</label>
+        <input type="number" id="tailLength" name="tailLength" min="0" max="100" value="30">
+        <br><br>
+
+        <!--Вставь сюда :D-->
+    </form>
 </main>
 </body>
 </html>
